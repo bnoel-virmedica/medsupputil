@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.transengen.tier4.medsupputil;
+package com.virmedica.medsupputil;
 
 import com.transengen.data.jpa.Tier4SessionFactory;
-import com.transengen.tier4.medsupputil.MedicareSuplementPlan;
+import com.virmedica.medsupputil.MedicareSuplementPlan;
 
 import java.util.List;
 import org.apache.log4j.Logger;

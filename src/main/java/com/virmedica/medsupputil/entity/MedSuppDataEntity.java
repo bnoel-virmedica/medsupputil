@@ -1,4 +1,4 @@
-package com.transengen.tier4.medsupputil.entity;
+package com.virmedica.medsupputil.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,8 +8,8 @@ import javax.persistence.Table;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 @Entity
-@Table(name = "MedicareSupplementalCobDetails")
-public class MedicareSupplementalCobDetailsEntity {
+@Table(name = "MEDSUPPDATA")
+public class MedSuppDataEntity {
 
 	@Id
 	// @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CMSRuleEntity")
@@ -31,9 +31,6 @@ public class MedicareSupplementalCobDetailsEntity {
 
 	@Column(name = "OOPLIMIT", nullable = false)
 	private double oopLimit;
-
-	@Column(name = "PLANBLURB", nullable = false)
-	private String planBlurb;
 
 	public long getId() {
 		return id;
@@ -81,14 +78,6 @@ public class MedicareSupplementalCobDetailsEntity {
 
 	public void setOopLimit(double oopLimit) {
 		this.oopLimit = oopLimit;
-	}
-
-	public String getPlanBlurb() {
-		return planBlurb;
-	}
-
-	public void setPlanBlurb(String planBlurb) {
-		this.planBlurb = planBlurb;
 	}
 
 	@Override
